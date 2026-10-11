@@ -1,0 +1,11 @@
+{
+  "name": "api-experts-marketplace",
+  "description": "API (active pharmaceutical ingredient) project evaluation experts",
+  "plugins": [
+    {
+      "name": "api-project-evaluation",
+      "source": "./plugins/api-project-evaluation",
+      "description": "Nine-expert team applying the five-dimension intersection model and stage-gate process across market, cost, quality, supply chain and capability to issue API project go/no-go calls."
+    }
+  ]
+}
