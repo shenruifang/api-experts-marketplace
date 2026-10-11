@@ -1,0 +1,256 @@
+{
+  "name": "api-project-evaluation",
+  "version": "1.0.0",
+  "description": "Seven-role expert team delivering API (active pharmaceutical ingredient) project scouting, synthetic route feasibility, IP and registration, quality and EHS, process economics and go/no-go recommendations",
+  "author": {
+    "name": "API Project Evaluation Team",
+    "email": ""
+  },
+  "agents": [
+    "./agents/api-project-evaluation-team-lead.md",
+    "./agents/api-market-scout.md",
+    "./agents/synthesis-route-engineer.md",
+    "./agents/process-economics-analyst.md",
+    "./agents/ip-regulatory-analyst.md",
+    "./agents/quality-ehs-assessor.md",
+    "./agents/supply-chain-analyst.md",
+    "./agents/capability-assessor.md",
+    "./agents/commercialization-strategist.md",
+    "./agents/api-risk-officer.md"
+  ],
+  "expertType": "team",
+  "agentName": "api-project-evaluation-team-lead",
+  "teamInfo": {
+    "leadAgent": "api-project-evaluation-team-lead",
+    "memberAgents": [
+      "api-market-scout",
+      "synthesis-route-engineer",
+      "process-economics-analyst",
+      "ip-regulatory-analyst",
+      "quality-ehs-assessor",
+      "supply-chain-analyst",
+      "capability-assessor",
+      "commercialization-strategist",
+      "api-risk-officer"
+    ]
+  },
+  "displayName": {
+    "en": "API Project Evaluation Team",
+    "zh": "原料药立项评估团"
+  },
+  "profession": {
+    "en": "API Project Evaluation Team",
+    "zh": "原料药立项评估团"
+  },
+  "displayDescription": {
+    "en": "Nine-expert team applying the five-dimension intersection model and stage-gate process across market, cost, quality, supply chain and capability to issue API project go/no-go calls.",
+    "zh": "九位专家按五维决策模型与阶段门流程，覆盖市场、成本、质量、供应链与能力，输出原料药立项交集判定结论。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "评估XX原料药的立项可行性，输出完整立项评估报告",
+    "en": "Evaluate the project feasibility of API XX and produce a full go/no-go assessment report"
+  },
+  "plugin": "api-project-evaluation",
+  "tags": [
+    {
+      "en": "API Project Evaluation",
+      "zh": "原料药立项"
+    },
+    {
+      "en": "Synthetic Route",
+      "zh": "合成工艺路线"
+    },
+    {
+      "en": "IP & Registration",
+      "zh": "专利与注册"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Evaluate the project feasibility of API XX and produce a full go/no-go assessment report",
+      "zh": "评估XX原料药的立项可行性，输出完整立项评估报告"
+    },
+    {
+      "en": "Screen API candidates that fit our production lines and give a prioritized shortlist",
+      "zh": "帮我筛选适合我们产线的原料药品种，输出优先级立项清单"
+    },
+    {
+      "en": "Compare two synthetic routes for API XX and quantify cost, scale-up risk and EHS exposure",
+      "zh": "对比XX原料药的两条合成路线，量化成本、放大风险与EHS代价"
+    }
+  ],
+  "members": [
+    {
+      "id": "api-project-evaluation-team-lead",
+      "name": {
+        "en": "He",
+        "zh": "贺立衡"
+      },
+      "displayName": {
+        "en": "He",
+        "zh": "贺立衡"
+      },
+      "profession": {
+        "en": "API Portfolio Director",
+        "zh": "原料药立项总监"
+      },
+      "avatar": "avatars/api-project-evaluation-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "api-market-scout",
+      "name": {
+        "en": "Fu",
+        "zh": "傅望远"
+      },
+      "displayName": {
+        "en": "Fu",
+        "zh": "傅望远"
+      },
+      "profession": {
+        "en": "Market Window Analyst",
+        "zh": "市场窗口官"
+      },
+      "avatar": "avatars/api-market-scout.png",
+      "role": "member"
+    },
+    {
+      "id": "synthesis-route-engineer",
+      "name": {
+        "en": "Lu",
+        "zh": "陆通达"
+      },
+      "displayName": {
+        "en": "Lu",
+        "zh": "陆通达"
+      },
+      "profession": {
+        "en": "Synthetic Route Engineer",
+        "zh": "合成路线工程师"
+      },
+      "avatar": "avatars/synthesis-route-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "ip-regulatory-analyst",
+      "name": {
+        "en": "Zhang",
+        "zh": "章立规"
+      },
+      "displayName": {
+        "en": "Zhang",
+        "zh": "章立规"
+      },
+      "profession": {
+        "en": "IP & Regulatory Analyst",
+        "zh": "专利与注册分析师"
+      },
+      "avatar": "avatars/ip-regulatory-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "quality-ehs-assessor",
+      "name": {
+        "en": "Qin",
+        "zh": "秦守正"
+      },
+      "displayName": {
+        "en": "Qin",
+        "zh": "秦守正"
+      },
+      "profession": {
+        "en": "Quality & EHS Assessor",
+        "zh": "质量与EHS评估师"
+      },
+      "avatar": "avatars/quality-ehs-assessor.png",
+      "role": "member"
+    },
+    {
+      "id": "process-economics-analyst",
+      "name": {
+        "en": "Jia",
+        "zh": "贾盈川"
+      },
+      "displayName": {
+        "en": "Jia",
+        "zh": "贾盈川"
+      },
+      "profession": {
+        "en": "Total Cost & Financial Analyst",
+        "zh": "全成本与财务测算师"
+      },
+      "avatar": "avatars/process-economics-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "supply-chain-analyst",
+      "name": {
+        "en": "Gong",
+        "zh": "龚继源"
+      },
+      "displayName": {
+        "en": "Gong",
+        "zh": "龚继源"
+      },
+      "profession": {
+        "en": "Supply Chain Reliability Analyst",
+        "zh": "供应链可靠评估师"
+      },
+      "avatar": "avatars/supply-chain-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "capability-assessor",
+      "name": {
+        "en": "Ren",
+        "zh": "任知量"
+      },
+      "displayName": {
+        "en": "Ren",
+        "zh": "任知量"
+      },
+      "profession": {
+        "en": "Capability & Resource Assessor",
+        "zh": "能力与资源匹配评估师"
+      },
+      "avatar": "avatars/capability-assessor.png",
+      "role": "member"
+    },
+    {
+      "id": "commercialization-strategist",
+      "name": {
+        "en": "Gu",
+        "zh": "顾开疆"
+      },
+      "displayName": {
+        "en": "Gu",
+        "zh": "顾开疆"
+      },
+      "profession": {
+        "en": "Commercialization Strategist",
+        "zh": "商业化与客户策略师"
+      },
+      "avatar": "avatars/commercialization-strategist.png",
+      "role": "member"
+    },
+    {
+      "id": "api-risk-officer",
+      "name": {
+        "en": "Zhou",
+        "zh": "周虑远"
+      },
+      "displayName": {
+        "en": "Zhou",
+        "zh": "周虑远"
+      },
+      "profession": {
+        "en": "API Portfolio Risk Officer",
+        "zh": "原料药立项风控官"
+      },
+      "avatar": "avatars/api-risk-officer.png",
+      "role": "member"
+    }
+  ]
+}
